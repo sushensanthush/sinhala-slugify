@@ -1,6 +1,9 @@
 /**
  * sinhala-slugify
- * Copyright (c) 2026. All rights reserved.
+ * * A phonetic transliteration engine to convert Sinhala Unicode text into SEO-friendly URL slugs.
+ * * Copyright (c) 2026 Sushen Santhush. All rights reserved.
+ * This software is protected under the Intellectual Property Act of Sri Lanka.
+ * Licensed under the MIT License.
  */
 
 const consonants = {
@@ -10,7 +13,7 @@ const consonants = {
     'ත': 'th', 'ථ': 'th', 'ද': 'dh', 'ධ': 'dh', 'න': 'n',
     'ප': 'p', 'ඵ': 'ph', 'බ': 'b', 'භ': 'bh', 'ම': 'm',
     'ය': 'y', 'ර': 'r', 'ල': 'l', 'ව': 'w', 'ශ': 'sh', 'ෂ': 'sh', 'ස': 's', 'හ': 'h', 'ළ': 'l', 'ෆ': 'f',
-    'ං': 'n', 'ඃ': 'h' // බිංදුව සහ විසර්ගය
+    'ං': 'n', 'ඃ': 'h' // අනුස්වාරය සහ විසර්ගය
 };
 
 const vowels = {
@@ -40,7 +43,7 @@ function sinhalaSlugify(text) {
             let sound = consonants[char];
             let nextPart = "";
             
-            // ඉන්පසු එන අකුරු පරීක්ෂාව (Modifiers/Special clusters)
+            // Methana mn akuru check karanna dala thiyenw (Modifiers/Special clusters)
             let foundModifier = false;
             
             // Check for multi-character modifiers like ්‍ය or ්‍ර
@@ -82,10 +85,10 @@ function sinhalaSlugify(text) {
 module.exports = { sinhalaSlugify };
 
 // Test Updates
-console.log("1. බුද්ධිමය:", sinhalaSlugify("බුද්ධිමය"));
-console.log("2. ශ්‍රී ලංකා:", sinhalaSlugify("ශ්‍රී ලංකා"));
-console.log("3. ව්‍යාපෘතිය:", sinhalaSlugify("ව්‍යාපෘතිය"));
-console.log("4. ප්‍රවෘත්ති:", sinhalaSlugify("ප්‍රවෘත්ති"));
-console.log("6. ඉංජිනේරු (Engineer):", sinhalaSlugify("ඉංජිනේරු"));
-console.log("5. ව්‍යවස්ථාව (Constitution):", sinhalaSlugify("ව්‍යවස්ථාව"));
-console.log("5. සුබ අලුත් අවුරුද්දක් වේවා!:", sinhalaSlugify("සුබ අලුත් අවුරුද්දක් වේවා"));
+console.log("1. බුද්ධිමය", sinhalaSlugify("බුද්ධිමය"));
+console.log("2. ශ්‍රී ලංකා", sinhalaSlugify("ශ්‍රී ලංකා"));
+console.log("3. ව්‍යාපෘතිය", sinhalaSlugify("ව්‍යාපෘතිය"));
+console.log("4. ප්‍රවෘත්ති", sinhalaSlugify("ප්‍රවෘත්ති"));
+console.log("6. ඉංජිනේරු (Engineer)", sinhalaSlugify("ඉංජිනේරු"));
+console.log("5. ව්‍යවස්ථාව (Constitution)", sinhalaSlugify("ව්‍යවස්ථාව"));
+console.log("5. සුබ අලුත් අවුරුද්දක් වේවා!", sinhalaSlugify("සුබ අලුත් අවුරුද්දක් වේවා!"));
