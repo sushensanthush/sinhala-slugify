@@ -1,12 +1,28 @@
 {
   "name": "sinhala-slugify",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "A high-performance phonetic transliteration engine to convert Sinhala Unicode text into SEO-friendly URL slugs.",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "sinhala",
+    "slugify",
+    "seo",
+    "transliteration",
+    "node-js",
+    "sri-lanka",
+    "sinhala-unicode"
+  ],
+  "author": "Sushen Nilaweera",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushensanthush/sinhala-slugify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sushensanthush/sinhala-slugify/issues"
+  },
+  "homepage": "https://github.com/sushensanthush/sinhala-slugify#readme"
 }
