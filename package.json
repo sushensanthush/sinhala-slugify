@@ -6,7 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+  "sinhala",
+  "slugify",
+  "transliteration",
+  "sinhala-to-english",
+  "seo-friendly-urls",
+  "sri-lanka",
+  "unicode-converter",
+  "phonetic",
+  "url-slug",
+  "sinhala-unicode"
+],
+
   "author": "",
   "license": "ISC"
 }
